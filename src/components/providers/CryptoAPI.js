@@ -33,3 +33,11 @@ export const getCoinMarket = async ( coinName ) => {
   });
   return response.data;
 };
+
+export const getTrend = async () => {
+  const endpoint = '/search/trending';
+  const url = APIURL + endpoint;
+  const response = await axios.get(url);
+  return response.data;
+};
+

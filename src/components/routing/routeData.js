@@ -3,6 +3,8 @@ import { Home } from './../pages/Home';
 import { Coin } from './../pages/Coin';
 import { About } from './../pages/About';
 import { NotFound } from './../pages/NotFound';
+import { CryptPage } from './../pages/CryptPage';
+import { Trend } from './../pages/Trend';
 
 export const routeData = [
     {
@@ -20,6 +22,14 @@ export const routeData = [
             {
                 path : 'coin/:coinName',
                 element : <Coin />,
+            },
+            {
+                path : 'crypt',
+                element : <CryptPage />
+            },
+            {
+                path : 'trend',
+                element : <Trend />
             },
             {
                 path: '*',
