@@ -5,7 +5,7 @@ import { Box, Stack, Button, Paper, Container, Typography, } from '@mui/material
 import { BottomNavigation, BottomNavigationAction } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
-import ListIcon from '@mui/icons-material/List';
+import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import InfoIcon from '@mui/icons-material/Info';
 
 const BottomStaticPaper = styled(Paper)(({theme}) => ({
@@ -42,10 +42,10 @@ export const CryptBottomNavigation = () => {
           to={'/crypt'}
         />
         <BottomNavigationAction 
-          label="List"
-          icon={<ListIcon />}
+          label="Trend"
+          icon={<TrendingUpIcon />}
           component={Link}
-          to={'/list'}
+          to={'/trend'}
         />
         <BottomNavigationAction
           label="About"
