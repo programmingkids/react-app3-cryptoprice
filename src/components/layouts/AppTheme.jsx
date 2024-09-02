@@ -1,57 +1,57 @@
-import { ThemeProvider, createTheme, CssBaseline } from '@mui/material';
+import { ThemeProvider, createTheme, CssBaseline } from "@mui/material";
 
-import { teal } from '@mui/material/colors';
-import { pink } from '@mui/material/colors';
-import { indigo } from '@mui/material/colors';
-import { grey } from '@mui/material/colors';
+import { teal } from "@mui/material/colors";
+import { pink } from "@mui/material/colors";
+import { indigo } from "@mui/material/colors";
+import { grey } from "@mui/material/colors";
 
 const theme = createTheme({
-  palette : {
-    mode: 'light',
+  palette: {
+    mode: "light",
     background: {
-      default : '#ececec',
+      default: "#ececec",
     },
     primary: {
-      main : teal[800],
+      main: teal[800],
     },
     secondary: {
-      main : pink[300],
+      main: pink[300],
     },
   },
-  typography : {
+  typography: {
     subtitle1: {
       fontSize: 20,
     },
-    subtitle2 : {
+    subtitle2: {
       fontSize: 14,
-      fontWeight : 'bold',
+      fontWeight: "bold",
       color: grey[600],
     },
-    coinName : {
+    coinName: {
       fontSize: 30,
-      fontWeight: 'bold',
+      fontWeight: "bold",
     },
-    coinSymbol : {
+    coinSymbol: {
       fontSize: 25,
       color: indigo[400],
     },
-    coinPrice : {
+    coinPrice: {
       fontSize: 40,
-      fontWeight: 'bold',
+      fontWeight: "bold",
     },
     changeUp: {
-      color: 'blue',
+      color: "blue",
     },
     changeDown: {
-      color: 'red',
+      color: "red",
     },
     coinChangeUp: {
       fontSize: 30,
-      color: 'blue',
+      color: "blue",
     },
     coinChangeDown: {
       fontSize: 30,
-      color: 'red',
+      color: "red",
     },
   },
   components: {
@@ -59,8 +59,8 @@ const theme = createTheme({
       styleOverrides: {
         colorPrimary: {
           backgroundColor: teal.A700,
-        }
-      }
+        },
+      },
     },
   },
 });
